@@ -18,7 +18,9 @@ WriteMakefile(
         'GD'                    => 0,
 
         # build/test prereqs
+        'File::Copy'            => 0,
+        'File::Path'            => 0,
         'IO::File'              => 0,
-        'Test::More'            => '0.70',
+        'Test::More'            => '0.70'
     }
 );

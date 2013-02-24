@@ -23,6 +23,8 @@
     "prereqs" : {
         "test" : {
             "requires": {
+                "File::Copy": "0",
+                "File::Path": "0",
                 "IO::File": "0",
                 "Test::More": "0.70"
             },
