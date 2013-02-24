@@ -11,9 +11,9 @@ SYNOPSIS
     use Labyrinth::DIUtils::GD;
 
     # if using Labyrinth.
-	Labyrinth::DIUtils::Tool('GD');
+    Labyrinth::DIUtils::Tool('GD');
 
-	my $hook = Labyrinth::DIUtils::GD->new($file);
+    my $hook = Labyrinth::DIUtils::GD->new($file);
     my $hook = $hook->rotate($degrees);       # 0 - 360
     my $hook = $hook->reduce($xmax,$ymax);
     my $hook = $hook->thumb($thumbnail,$square);
