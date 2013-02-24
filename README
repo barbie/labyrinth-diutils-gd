@@ -1,62 +1,46 @@
-Labyrinth::DIUtils::GDUser Contributed Perl DocumentaLabyrinth::DIUtils::GD(3)
+Labyrinth::DIUtils::GD
+======================
 
+Handles the driver software for GD image manipulation within the Labyrinth Web
+Framework. If using within Labyrinth, do not use this module directly, access
+should be used via Labyrinth::DIUtils.
 
-
-NAME
-       Labyrinth::DIUtils::GD - Digital Image utilities driver with GD for
-       Labyrinth Framework.
+However, the module can be use in isolation.
 
 SYNOPSIS
-         use Labyrinth::DIUtils::GD;
+    use Labyrinth::DIUtils::GD;
 
-	 Labyrinth::DIUtils::Tool('GD');
+    # if using Labyrinth.
+	Labyrinth::DIUtils::Tool('GD');
 
-	 my $hook = Labyrinth::DIUtils::GD->new($file);
-         my $hook = $hook->rotate($degrees);       # 0 - 360
-         my $hook = $hook->reduce($xmax,$ymax);
-         my $hook = $hook->thumb($thumbnail,$square);
+	my $hook = Labyrinth::DIUtils::GD->new($file);
+    my $hook = $hook->rotate($degrees);       # 0 - 360
+    my $hook = $hook->reduce($xmax,$ymax);
+    my $hook = $hook->thumb($thumbnail,$square);
 
-DESCRIPTION
-       Handles the driver software for GD image manipulation; Do not use this
-       module directly, access via Labyrinth::DIUtils.
+INSTALLATION
 
-METHODS
-   Contructor
-       new($file)
-           The constructor. Passed a single mandatory argument, which is then
-           used as the image file for all image manipulation.
+See the INSTALL file for full instructions.
 
-   Image Manipulation
-       rotate($degrees)
-           Object Method. Passed a single mandatory argument, which is then
-           used to turn the image file the number of degrees specified.
+DEPENDENCIES
 
-       reduce($xmax,$ymax)
-           Object Method. Passed a two arguments (defaulting to 100x100),
-           which is then used to reduce the image to a size that fit inside a
-           box of the specified dimensions.
+    GD
 
-       thumb($thumbnail,$square)
-           Object Method. Passed two arguments, the first being the name of
-           the thumbnail file to be created, and the second being a single
-           dimension of the square box (defaulting to 100), which is then used
-           to reduce the image to a thumbnail.
+Note that although this distribution is intended to be used within the 
+Labyrinth Web Framework, it doesn't require any part of the framework,
+and can be used independently.
 
-SEE ALSO
-         GD
-         Labyrinth
+See also Perldoc.
 
 AUTHOR
-       Barbie, <barbie@missbarbell.co.uk> for Miss Barbell Productions,
-       <http://www.missbarbell.co.uk/>
+
+  Barbie, <barbie@missbarbell.co.uk> for Miss Barbell Productions,
+  <http://www.missbarbell.co.uk/>
 
 COPYRIGHT & LICENSE
-         Copyright (C) 2002-2011 Barbie for Miss Barbell Productions
-         All Rights Reserved.
 
-         This module is free software; you can redistribute it and/or
-         modify it under the Artistic License 2.0.
+  Copyright (C) 2002-2013 Barbie for Miss Barbell Productions
+  All Rights Reserved.
 
-
-
-perl v5.10.1                      2011-03-13         Labyrinth::DIUtils::GD(3)
+  This module is free software; you can redistribute it and/or
+  modify it under the Artistic License 2.0.
