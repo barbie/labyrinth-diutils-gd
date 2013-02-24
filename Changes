@@ -1,4 +1,6 @@
 Changes for the Labyrinth-DIUtils-GD
 
-5.04	13/03/2011
-	- abstracted from Labyrinth, as stand alone plugin.
+        - change file dates changed to meet W3CDTF standards.
+
+5.04	2011-03-13
+	    - abstracted from Labyrinth, as stand alone plugin.
