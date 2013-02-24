@@ -53,12 +53,14 @@ image file for all image manipulation.
 =cut
 
 sub new {
-    my $self = shift;
+    my $self  = shift;
     my $image = shift;
-    Croak("no image specified") if !$image;
+
+    die "no image specified"    if !$image;
+    die "no image file found"   if !-f $image;
 
     my $i = GD::Image->newFromJpeg($image) ;
-    Croak("object image error: [$image]")   if !$i;
+    die "object image error: [$image]"  if !$i;
 
     my $atts = {
         'image'     => $image,
@@ -79,11 +81,13 @@ sub new {
 Object Method. Passed a single mandatory argument, which is then used to turn
 the image file the number of degrees specified.
 
+Note that GD doesn't support rotating angles other than 90, 180 and 270.
+
 =cut
 
 sub rotate {
     my $self = shift;
-    my $degs = shift || return undef;
+    my $degs = shift || return;
 
     return  unless($self->{image});
 
@@ -94,9 +98,11 @@ sub rotate {
     $p = $i->copyRotate90()     if($degs == 90);
     $p = $i->copyRotate180()    if($degs == 180);
     $p = $i->copyRotate270()    if($degs == 270);
-    _writeimage($self->{image},$p->jpeg);
+    return  unless($p);
 
+    _writeimage($self->{image},$p->jpeg);
     $self->{object} = $p;
+    return 1;
 }
 
 =item reduce($xmax,$ymax)
@@ -135,6 +141,7 @@ sub reduce {
     my $p = GD::Image->new($w,$h);
     $p->copyResized($i,0,0,0,0,$w,$h,$width,$height);
     _writeimage($self->{image},$p->png);
+    return 1;
 }
 
 =item thumb($thumbnail,$square)
@@ -149,7 +156,7 @@ file to be created, and the second being a single dimension of the square box
 
 sub thumb {
     my $self = shift;
-    my $file = shift;
+    my $file = shift || return;
     my $smax = shift || 100;
 
     my $i = $self->{object};
@@ -168,6 +175,7 @@ sub thumb {
     my $p = GD::Image->new($w,$h);
     $p->copyResized($i,0,0,0,0,$w,$h,$width,$height);
     _writeimage($file,$p->png);
+    return 1;
 }
 
 sub _writeimage {

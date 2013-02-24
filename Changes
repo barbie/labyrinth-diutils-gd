@@ -6,6 +6,7 @@ Changes for the Labyrinth-DIUtils-GD
         - various META file updates.
         - updated README, added INSTALL file.
         - updated and extended test suite.
+        - removed Croak and simplified error handling.
 
 5.04    2011-03-13
         - abstracted from Labyrinth, as stand alone plugin.
