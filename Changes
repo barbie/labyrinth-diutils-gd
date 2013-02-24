@@ -1,5 +1,6 @@
 Changes for the Labyrinth-DIUtils-GD
 
+5.05    2013-02-24
         - change file dates changed to meet W3CDTF standards.
         - added LICENSE file.
         - reworked Makefile.PL for clarity.
