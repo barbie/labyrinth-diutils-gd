@@ -5,6 +5,7 @@ Changes for the Labyrinth-DIUtils-GD
         - reworked Makefile.PL for clarity.
         - various META file updates.
         - updated README, added INSTALL file.
+        - updated test suite.
 
 5.04	2011-03-13
 	    - abstracted from Labyrinth, as stand alone plugin.
