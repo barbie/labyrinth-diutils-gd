@@ -11,13 +11,13 @@ The easiest way to install is via CPAN or CPANPLUS:
 CPAN:
 
     % perl -MCPAN -e shell                    [as root]
-    > install Labyrinth
+    > install Labyrinth-DIUtils-GD
     > quit
 
 CPANPLUS:
 
     % cpanp
-    > i Labyrinth
+    > i Labyrinth-DIUtils-GD
     > q
 
 See your local 'perldoc CPAN' or 'perldoc CPANPLUS' for
@@ -27,31 +27,31 @@ instructions on setting up and configuring CPAN or CPANPLUS.
 OBTAINING THE MODULE
 --------------------
 
-The latest release version of Labyrinth can be 
+The latest release version of Labyrinth-DIUtils-GD can be 
 downloaded from any CPAN site:
 
     http://www.cpan.org/modules/by-authors/id/B/BA/BARBIE/
-    http://search.cpan.org/dist/Labyrinth/
+    http://search.cpan.org/dist/Labyrinth-DIUtils-GD/
 
 Phrasebook is distributed as a gzipped tar archive file:
 
-    Labyrinth-<version>.tar.gz
+    Labyrinth-DIUtils-GD-<version>.tar.gz
 
 where <version> represents the current version number, e.g. 0.01.
 
 To install the module, unpack the distribution archive to
 create an installation directory.  Something like this:
 
-    tar zxf Labyrinth-0.01.tar.gz
+    tar zxf Labyrinth-DIUtils-GD-0.01.tar.gz
 
 or
 
-    gunzip Labyrinth-0.01.tar.gz
-    tar xf Labyrinth-0.01.tar
+    gunzip Labyrinth-DIUtils-GD-0.01.tar.gz
+    tar xf Labyrinth-DIUtils-GD-0.01.tar
 
 You can then 'cd' into the directory created,
 
-    cd Labyrinth-0.01
+    cd Labyrinth-DIUtils-GD-0.01
 
 
 INSTALLING MANUALLY
@@ -90,7 +90,7 @@ information;
     + result of `perl -V'
     + output from 'make test' - ideally do 'make test TEST_VERBOSE=1 >& errs'
 
-Send those to bug-Labyrinth@rt.cpan.org and I'll 
+Send those to bug-Labyrinth-DIUtils-GD@rt.cpan.org and I'll 
 get back to you as soon as I'm able.
 
 If it worked, then become root and type:
@@ -104,7 +104,7 @@ If you have a copy of cpantest installed, type:
     % cpantest -g pass -nc -p `basename \`pwd\`` -auto
 
 Or:
-    % cpantest -g pass -nc -p Labyrinth-0.01 -auto
+    % cpantest -g pass -nc -p Labyrinth-DIUtils-GD-0.01 -auto
 
 That will tell both me and other potential users that the module
 built correctly on your machine.

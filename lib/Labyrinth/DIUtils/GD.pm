@@ -16,7 +16,7 @@ Labyrinth::DIUtils::GD - Digital Image utilities driver with GD for Labyrinth Fr
   Labyrinth::DIUtils::Tool('GD');
 
   my $hook = Labyrinth::DIUtils::GD->new($file);
-  my $hook = $hook->rotate($degrees);       # 0 - 360
+  my $hook = $hook->rotate($degrees);       # 90, 180, 270
   my $hook = $hook->reduce($xmax,$ymax);
   my $hook = $hook->thumb($thumbnail,$square);
 
@@ -89,10 +89,9 @@ sub rotate {
     my $self = shift;
     my $degs = shift || return;
 
-    return  unless($self->{image});
+    return  unless($self->{image} && $self->{object});
 
     my $i = $self->{object};
-    return  unless($i);
 
     my $p;
     $p = $i->copyRotate90()     if($degs == 90);
@@ -118,10 +117,9 @@ sub reduce {
     my $xmax = shift || 100;
     my $ymax = shift || 100;
 
-    return  unless($self->{image});
+    return  unless($self->{image} && $self->{object});
 
     my $i = $self->{object};
-    return  unless($i);
 
     my ($w,$h);
     my ($width,$height) = $i->getBounds();

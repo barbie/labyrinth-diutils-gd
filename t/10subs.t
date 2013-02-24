@@ -42,10 +42,10 @@ eval {
     is($di->reduce(100,200),1,'height reduction');
     is($di->reduce(),1,'default reduction');
 
-    is($di->thumb(),undef,'no rotation');
-    is($di->thumb($thumbnail),1,'no rotation');
+    is($di->thumb(),undef,'no thumbnail');
+    is($di->thumb($thumbnail),1,'default thumbnail');
     ok(-f $thumbnail);
-    is($di->thumb($thumbnail2,120),1,'no rotation');
+    is($di->thumb($thumbnail2,120),1,'set thumbnail');
     ok(-f $thumbnail2);
 
     rmtree('t/test');
