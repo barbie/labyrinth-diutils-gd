@@ -50,3 +50,5 @@ eval {
 
     rmtree('t/test');
 };
+
+diag($@) if($@);
