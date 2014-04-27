@@ -8,7 +8,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
-    NAME                => 'Labyrinth::DIUtils::GD',
+    NAME                => 'Labyrinth-DIUtils-GD',
     VERSION_FROM        => 'lib/Labyrinth/DIUtils/GD.pm',
     ABSTRACT	        => 'Digital Image utilities driver with GD for Labyrinth Framework',
     NO_META             => 1,

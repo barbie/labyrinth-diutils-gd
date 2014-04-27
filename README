@@ -1,5 +1,5 @@
-Labyrinth::DIUtils::GD
-======================
+Labyrinth-DIUtils-GD
+====================
 
 Handles the driver software for GD image manipulation within the Labyrinth Web
 Framework. If using within Labyrinth, do not use this module directly, access
@@ -39,7 +39,7 @@ AUTHOR
 
 COPYRIGHT & LICENSE
 
-  Copyright (C) 2002-2013 Barbie for Miss Barbell Productions
+  Copyright (C) 2002-2014 Barbie for Miss Barbell Productions
   All Rights Reserved.
 
   This module is free software; you can redistribute it and/or

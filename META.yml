@@ -1,5 +1,5 @@
 --- #YAML:1.0
-name:                     Labyrinth::DIUtils::GD
+name:                     Labyrinth-DIUtils-GD
 version:                  5.06
 abstract:                 Digital Image utilities driver with GD for Labyrinth Framework
 author:
