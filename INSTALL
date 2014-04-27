@@ -1,12 +1,13 @@
-Installation Instructions
+INSTALLATION INSTRUCTIONS
+=========================
 
-The instructions are basically as per any Perl module.
+The instructions are basically as per any Perl distribution.
 
 
 INSTALLING AUTOMATICALLY
 ------------------------
 
-The easiest way to install is via CPAN or CPANPLUS:
+The easiest way to install is via CPAN, CPANPLUS or cpanminus:
 
 CPAN:
 
@@ -20,8 +21,13 @@ CPANPLUS:
     > i Labyrinth-DIUtils-GD
     > q
 
-See your local 'perldoc CPAN' or 'perldoc CPANPLUS' for
-instructions on setting up and configuring CPAN or CPANPLUS.
+cpanminus:
+
+    % cpanm Labyrinth-DIUtils-GD
+
+See your local documentation ('perldoc CPAN', 'perldoc CPANPLUS' or 
+'perldoc cpanm') for further instructions on setting up and configuring your
+chosen installer.
 
 
 OBTAINING THE MODULE
