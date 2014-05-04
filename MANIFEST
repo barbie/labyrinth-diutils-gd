@@ -1,11 +1,11 @@
 Changes
 INSTALL
+lib/Labyrinth/DIUtils/GD.pm
 LICENSE
-MANIFEST
 Makefile.PL
+MANIFEST
 META.json
 META.yml
-lib/Labyrinth/DIUtils/GD.pm
 README
 t/00use.t
 t/10subs.t

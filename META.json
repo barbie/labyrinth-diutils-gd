@@ -1,6 +1,6 @@
 {
     "name": "Labyrinth-DIUtils-GD",
-    "version": "5.06",
+    "version": "5.07",
     "abstract": "Digital Image utilities driver with GD for Labyrinth Framework",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -46,7 +46,7 @@
     "provides": {
         "Labyrinth::DIUtils::GD": {
             "file": "lib/Labyrinth/DIUtils/GD.pm",
-            "version": "5.06"
+            "version": "5.07"
         }
     },
     "no_index": {
