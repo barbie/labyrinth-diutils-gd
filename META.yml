@@ -12,6 +12,7 @@ installdirs:              site
 requires:
   perl:                             5.006
   GD:                               0
+  IO::File:                         0
 recommends:
   Test::CPAN::Meta:                 0
   Test::CPAN::Meta::JSON:           0
@@ -20,7 +21,6 @@ recommends:
 build_requires:
   File::Copy:                       0
   File::Path:                       0
-  IO::File:                         0
   Test::More:                       0.01
 
 provides:

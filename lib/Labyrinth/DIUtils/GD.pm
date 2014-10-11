@@ -32,6 +32,7 @@ this module directly, access via Labyrinth::DIUtils.
 #############################################################################
 
 use GD;
+use IO::File;
 
 #############################################################################
 #Subroutines
@@ -179,10 +180,10 @@ sub thumb {
 sub _writeimage {
     my ($file,$data) = @_;
 
-    open    IMAGE, ">$file" || die "Cannot write to file [$file]: $!";
-    binmode IMAGE;
-    print   IMAGE $data;
-    close   IMAGE;
+    my $fh = IO::File->new($file,'w+') || die "Cannot write to file [$file]: $!";
+    $fh->binmode;
+    print $fh $data;
+    $fh->close;
 }
 
 1;

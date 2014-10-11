@@ -3,6 +3,7 @@ Changes for Labyrinth-DIUtils-GD
 
         - fixed license fields in META.json to be lists.
         - extended META test suite.
+        - switched to using IO::File instead of bare word handles.
 
 5.07    2014-05-04
         - fixed distribution name in META.

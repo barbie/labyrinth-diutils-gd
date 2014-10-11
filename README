@@ -25,6 +25,7 @@ See the INSTALL file for full instructions.
 DEPENDENCIES
 
     GD
+    IO::File
 
 Note that although this distribution is intended to be used within the 
 Labyrinth Web Framework, it doesn't require any part of the framework,
