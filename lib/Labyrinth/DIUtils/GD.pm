@@ -192,8 +192,9 @@ __END__
 
 =head1 SEE ALSO
 
-  GD
-  Labyrinth
+L<GD>,
+L<Labyrinth>,
+L<Labyrinth::DIUtils::ImageMagick>
 
 =head1 AUTHOR
 
